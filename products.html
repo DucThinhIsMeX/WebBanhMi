@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/products.css" />
+    <title>Bánh Mì Shop</title>
+  </head>
+  <body>
+      <header class="main-header">
+      <nav class="nav-bar">
+        <h1 class="shop-name">Bánh Mì Express</h1>
+        <div class="nav-items">
+          <div class="search-box">
+            <i class="search-icon">🔍</i>
+            <input type="text" placeholder="Tìm kiếm bánh mì..." />
+          </div>
+          <select class="category-filter">
+            <option value="all">Tất cả</option>
+            <option value="traditional">Truyền thống</option>
+            <option value="premium">Cao cấp</option>
+            <option value="vegetarian">Chay</option>
+          </select>
+          <button class="cart-btn">
+            Giỏ hàng
+            <span class="cart-count">0</span>
+          </button>
+          <button class="profile-btn">
+            <span class="username">User</span>
+          </button>
+        </div>
+      </nav>
+    </header>    <main class="shop-content">
+      <section class="hero">
+        <h2 class="hero-title">Bánh Mì Tươi Mỗi Ngày</h2>
+        <p class="hero-subtitle">Đặt hàng online - Nhận bánh trong 30 phút</p>
+      </section>
+
+      <section class="products">
+        <div class="product-grid">
+          <!-- Bánh mì thịt -->
+          <article class="product-card" data-id="1">
+            <div class="product-image">
+              <img src="public/images/banh-mi-thit.jpg" alt="Bánh Mì Thịt Nguội" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Thịt Nguội</h3>
+              <p class="description">Thịt nguội, pate thơm, rau sống, dưa chua, ớt tươi</p>
+              <div class="price-row">
+                <span class="price">25.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bánh mì xíu mại -->
+          <article class="product-card" data-id="2">
+            <div class="product-image">
+              <img src="public/images/banh-mi-xiu-mai.jpg" alt="Bánh Mì Xíu Mại" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Xíu Mại</h3>
+              <p class="description">Xíu mại nóng hổi, nước sốt đặc biệt, rau thơm</p>
+              <div class="price-row">
+                <span class="price">30.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bánh mì thịt nướng -->
+          <article class="product-card" data-id="3">
+            <div class="product-image">
+              <img src="public/images/banh-mi-thit-nuong.jpg" alt="Bánh Mì Thịt Nướng" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Thịt Nướng</h3>
+              <p class="description">Thịt nướng ướp sả, đồ chua, rau thơm, sốt tương đặc biệt</p>
+              <div class="price-row">
+                <span class="price">28.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bánh mì gà -->
+          <article class="product-card" data-id="4">
+            <div class="product-image">
+              <img src="public/images/banh-mi-ga.jpg" alt="Bánh Mì Gà" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Gà</h3>
+              <p class="description">Gà xé, sốt mayo, rau thơm, dưa leo</p>
+              <div class="price-row">
+                <span class="price">28.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bánh mì chả cá -->
+          <article class="product-card" data-id="5">
+            <div class="product-image">
+              <img src="public/images/banh-mi-cha-ca.jpg" alt="Bánh Mì Chả Cá" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Chả Cá</h3>
+              <p class="description">Chả cá chiên giòn, sốt tương, rau thơm</p>
+              <div class="price-row">
+                <span class="price">25.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bánh mì chay -->
+          <article class="product-card" data-id="6">
+            <div class="product-image">
+              <img src="public/images/banh-mi-chay.jpg" alt="Bánh Mì Chay" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Chay</h3>
+              <p class="description">Đậu hũ chiên, nấm xào, rau củ tươi</p>
+              <div class="price-row">
+                <span class="price">22.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bánh mì đặc biệt -->
+          <article class="product-card" data-id="7">
+            <div class="product-image">
+              <img src="public/images/banh-mi-dac-biet.jpg" alt="Bánh Mì Đặc Biệt" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Đặc Biệt</h3>
+              <p class="description">Thịt nguội, xá xíu, trứng ốp la, pate, rau sống</p>
+              <div class="price-row">
+                <span class="price">35.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bánh mì bò kho -->
+          <article class="product-card" data-id="8">
+            <div class="product-image">
+              <img src="public/images/banh-mi-bo-kho.jpg" alt="Bánh Mì Bò Kho" />
+            </div>
+            <div class="product-info">
+              <h3>Bánh Mì Bò Kho</h3>
+              <p class="description">Bò kho nấu mềm, nước sốt đậm đà, rau thơm</p>
+              <div class="price-row">
+                <span class="price">35.000đ</span>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-content">
+        <div class="contact">
+          <h4>Liên hệ</h4>
+          <p>📞 0123-456-789</p>
+          <p>📍 123 Đường ABC, Quận XYZ</p>
+        </div>
+        <div class="hours">
+          <h4>Giờ mở cửa</h4>
+          <p>Thứ 2 - Chủ nhật: 6:00 - 22:00</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Panel -->
+    <aside class="cart-panel">
+      <div class="cart-header">
+        <h3 class="cart-title">Giỏ hàng</h3>
+        <button class="close-cart">×</button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Tổng cộng:</span>
+          <span class="total-amount">0đ</span>
+        </div>
+        <button class="checkout-btn">Thanh toán</button>
+      </div>
+    </aside>
+
+    <!-- Toast notifications container -->
+    <div id="toast-container"></div>
+
+    <!-- Import modules -->
+    <script type="module">
+      import { ProductController } from './src/controllers/ProductController.js';
+      import { ProductService } from './src/services/ProductService.js';
+      import { AuthService } from './src/services/AuthService.js';
+      import { Product } from './src/models/Product.js';
+
+      // Initialize services and controllers
+      const authService = new AuthService();
+      const productService = new ProductService();
+      const productController = new ProductController(productService, authService);
+
+      // Check authentication
+      if (!authService.isAuthenticated()) {
+        window.location.href = 'index.html';
+      }
+
+      // Initialize page
+      document.addEventListener('DOMContentLoaded', () => {
+        // Display user info
+        const user = authService.getCurrentUser();
+        if (user) {
+          document.querySelector('.username').textContent = user.username;
+        }
+
+        // Load and display products
+        productController.loadProducts();
+
+        // Setup cart panel
+        const cartBtn = document.querySelector('.cart-btn');
+        const cartPanel = document.querySelector('.cart-panel');
+        const closeCart = document.querySelector('.close-cart');
+
+        cartBtn.addEventListener('click', () => {
+          cartPanel.classList.add('open');
+        });
+
+        closeCart.addEventListener('click', () => {
+          cartPanel.classList.remove('open');
+        });
+
+        // Setup add to cart buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+          button.addEventListener('click', async (e) => {
+            const productCard = e.target.closest('.product-card');
+            const productId = productCard.dataset.id;
+            try {
+              await productController.addToCart(productId);
+              button.classList.add('clicked');
+              setTimeout(() => button.classList.remove('clicked'), 300);
+            } catch (error) {
+              console.error('Failed to add to cart:', error);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
